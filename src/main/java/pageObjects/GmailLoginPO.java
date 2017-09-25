@@ -17,7 +17,7 @@ public class GmailLoginPO {
     @FindBy(xpath = "//*[@id=\"password\"]/div[1]/div/div[1]/input")
     private WebElement passwordInput;
 
-    @FindBy(how = How.ID, id = "passwordNext")
+    @FindBy(id = "passwordNext")
     private WebElement passwordButton;
 
     public GmailLoginPO() {
@@ -31,7 +31,6 @@ public class GmailLoginPO {
 
     public void typePassword(String password){
         passwordInput.sendKeys(password);
-        passwordButton.click();
+            passwordButton.click();
     }
-
 }
