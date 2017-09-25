@@ -12,7 +12,7 @@ public class ChromeDriverSingleton {
 
     public static ChromeDriver getDriver() {
         if (driver == null) {
-//      System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+      System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
             driver = new ChromeDriver(){
                 {
                     manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
