@@ -31,6 +31,6 @@ public class GmailLoginPO {
 
     public void typePassword(String password){
         passwordInput.sendKeys(password);
-            passwordButton.click();
+        passwordButton.click();
     }
 }
