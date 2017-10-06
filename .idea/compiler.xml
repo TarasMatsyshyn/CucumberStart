@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CucumberStart" />
+        <module name="DataProvider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CucumberStart" target="1.8" />
+      <module name="DataProvider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
