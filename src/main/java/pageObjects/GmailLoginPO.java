@@ -2,7 +2,6 @@ package pageObjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import utils.ChromeDriverSingleton;
 
@@ -21,7 +20,8 @@ public class GmailLoginPO {
     private WebElement passwordButton;
 
     public GmailLoginPO() {
-        PageFactory.initElements(ChromeDriverSingleton.getDriver(),this);
+        PageFactory.initElements(ChromeDriverSingleton.getDriver(), this);
+
     }
 
     public void typeLogin(String email){
@@ -29,8 +29,9 @@ public class GmailLoginPO {
         loginButton.click();
     }
 
-    public void typePassword(String password){
+    public void typePassword(String password) throws InterruptedException {
         passwordInput.sendKeys(password);
+        Thread.sleep(1000);
         passwordButton.click();
     }
 }

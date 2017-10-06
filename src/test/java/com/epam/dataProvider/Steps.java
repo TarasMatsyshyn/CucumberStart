@@ -1,4 +1,4 @@
-package com.epam.cucumberStart;
+package com.epam.dataProvider;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -16,7 +16,7 @@ public class Steps {
     }
 
     @When("^I type valid credentials$")
-    public void typeCredentials(){
+    public void typeCredentials() throws InterruptedException {
         gmailLoginPO.typeLogin("test.matsyshyn.1@gmail.com");
         gmailLoginPO.typePassword("passwordtest");
     }
