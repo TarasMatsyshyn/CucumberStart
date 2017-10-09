@@ -1,4 +1,4 @@
-package com.epam.dataProvider;
+package com.epam.dataProvider.cucumberTask;
 
 import cucumber.api.java.After;
 import utils.ChromeDriverSingleton;

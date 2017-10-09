@@ -1,4 +1,4 @@
-package com.epam.dataProvider;
+package com.epam.dataProvider.cucumberTask;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

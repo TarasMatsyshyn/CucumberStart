@@ -1,16 +1,18 @@
 package com.epam.dataProvider;
 
 import model.UserModel;
+import utils.CSVParser;
 import utils.UserCredentionalXMLParser;
 
 
+import java.io.IOException;
 import java.util.List;
 
 public class DataProvider {
 
     @org.testng.annotations.DataProvider(parallel = true)
     public static Object [][] getData() throws Exception {
-        List<UserModel> users = userModels();
+        List<UserModel> users = userModelsCSV();
         Object [][] data = new Object[users.size()][2];
 
         for(int i = 0; i < users.size(); i++){
@@ -23,5 +25,10 @@ public class DataProvider {
     private static List<UserModel> userModels() throws Exception{
         UserCredentionalXMLParser xmlParser = new UserCredentionalXMLParser();
         return xmlParser.unMarshaling();
+    }
+
+    private static List<UserModel> userModelsCSV() throws IOException {
+        CSVParser csvParser = new CSVParser();
+        return csvParser.getUsersFromCSV();
     }
 }
