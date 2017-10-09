@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b7926d1-d602-404c-a564-c61ea96f1f9e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/Hooks.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/cucumberTask/Hooks.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/Runner.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/cucumberTask/Runner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/Steps.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/cucumberTask/Steps.java" />
+    <list default="true" id="0b7926d1-d602-404c-a564-c61ea96f1f9e" name="Default" comment="Added CSV Parser">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/epam/dataProvider/Hooks.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/epam/dataProvider/Runner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/epam/dataProvider/Steps.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/utils/UserCredentionalXMLParser.java" afterPath="$PROJECT_DIR$/src/main/java/utils/XMLParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/epam/dataProvider/DataProvider.class" afterPath="$PROJECT_DIR$/target/test-classes/com/epam/dataProvider/DataProvider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/epam/dataProvider/GmailTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/epam/dataProvider/GmailTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataProvider.iml" afterPath="$PROJECT_DIR$/DataProvider.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/UserModel.java" afterPath="$PROJECT_DIR$/src/main/java/model/UserModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/DataProvider.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/DataProvider.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,26 +25,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Steps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/cucumberTask/Steps.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="400">
+              <caret line="132" column="21" lean-forward="false" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GmailTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/GmailTest.java">
+      <file leaf-file-name="XLSParser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/XLSParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="258">
+              <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#796#797#0" expanded="true" />
+                <element signature="e#319#351#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TempMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/TempMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GmailTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/GmailTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/UserModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+              <folding>
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CellType.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.15/poi-3.15.jar!/org/apache/poi/ss/usermodel/CellType.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-171">
+              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,72 +96,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/CSVParser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="107" lean-forward="false" selection-start-line="14" selection-start-column="107" selection-end-line="14" selection-end-column="107" />
+              <caret line="14" column="107" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="107" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertiesParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/PropertiesParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="26" column="84" lean-forward="false" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserCredentionalXMLParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/UserCredentionalXMLParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="114" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="114" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/UserModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/com/epam/dataProvider/users.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="126" column="21" lean-forward="false" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/com/epam/dataProvider/users.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -122,11 +107,9 @@
       <file leaf-file-name="DataProvider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/DataProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/epam/cucumberStart/Steps.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/UserModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Users.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/UserModel.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/Runner.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/PropertiesParser.java" />
@@ -176,11 +158,14 @@
         <option value="$PROJECT_DIR$/src/test/resources/com/epam/dataProvider/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/GmailTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/cucumberTask/Steps.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/com/epam/dataProvider/users.csv" />
         <option value="$PROJECT_DIR$/src/main/java/utils/CSVReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/DataProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/CSVParser.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/UserModel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/dataProvider/DataProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/TempMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/XLSParser.java" />
       </list>
     </option>
   </component>
@@ -241,6 +226,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataProvider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberStart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataProvider" type="b2602c69:ProjectViewProjectNode" />
@@ -458,30 +451,24 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TempMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.epam.dataProvider.cucumberTask.*" />
+          <option name="PATTERN" value="utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="DataProvider" />
+      <option name="MAIN_CLASS_NAME" value="utils.TempMain" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.epam.dataProvider.cucumberTask" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.dataProvider.cucumberTask.Runner" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="DataProvider" />
       <envs />
-      <patterns />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -577,19 +564,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Runner" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.GmailTest.gmailTest" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.C:/Users/Taras_Matsyshyn/IdeaProjects/CucumberStart/src/main/resources/testng.xml" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.GmailTest" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/Users/Taras_Matsyshyn/IdeaProjects/CucumberStart/src/test/resources/com/epam/dataProvider/testng.xml" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.GmailTest.gmailTest" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/Taras_Matsyshyn/IdeaProjects/CucumberStart/src/main/resources/testng.xml" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.GmailTest" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.C:/Users/Taras_Matsyshyn/IdeaProjects/CucumberStart/src/test/resources/com/epam/dataProvider/testng.xml" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TempMain" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="TestNG.GmailTest" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.GmailTest.gmailTest" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/Users/Taras_Matsyshyn/IdeaProjects/CucumberStart/src/test/resources/com/epam/dataProvider/testng.xml" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.C:/Users/Taras_Matsyshyn/IdeaProjects/CucumberStart/src/main/resources/testng.xml" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Runner" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TempMain" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.GmailTest.gmailTest" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.C:/Users/Taras_Matsyshyn/IdeaProjects/CucumberStart/src/test/resources/com/epam/dataProvider/testng.xml" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.C:/Users/Taras_Matsyshyn/IdeaProjects/CucumberStart/src/main/resources/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -618,39 +605,46 @@
       <option name="project" value="LOCAL" />
       <updated>1507540891590</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added CSV Parser">
+      <created>1507555603297</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1507555603297</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Taras_Matsyshyn_IdeaProjects_CucumberStart_src_test_resources_com_epam_dataProvider_testng_xml - 2017.10.09 at 12h 00m 40s.xml">
-      <configuration name="C:/Users/Taras_Matsyshyn/IdeaProjects/CucumberStart/src/test/resources/com/epam/dataProvider/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GmailTest - 2017.10.09 at 11h 50m 40s.xml">
+    <history-entry file="GmailTest - 2017.10.09 at 16h 27m 11s.xml">
       <configuration name="GmailTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GmailTest - 2017.10.09 at 11h 52m 18s.xml">
+    <history-entry file="GmailTest - 2017.10.09 at 17h 00m 36s.xml">
       <configuration name="GmailTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GmailTest - 2017.10.09 at 12h 07m 51s.xml">
+    <history-entry file="GmailTest - 2017.10.09 at 17h 01m 16s.xml">
       <configuration name="GmailTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GmailTest - 2017.10.09 at 12h 14m 40s.xml">
+    <history-entry file="GmailTest - 2017.10.09 at 17h 01m 50s.xml">
       <configuration name="GmailTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GmailTest - 2017.10.09 at 12h 14m 59s.xml">
+    <history-entry file="GmailTest - 2017.10.09 at 17h 01m 58s.xml">
       <configuration name="GmailTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GmailTest - 2017.10.09 at 12h 18m 05s.xml">
+    <history-entry file="GmailTest - 2017.10.09 at 17h 08m 29s.xml">
       <configuration name="GmailTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GmailTest - 2017.10.09 at 13h 31m 09s.xml">
+    <history-entry file="GmailTest - 2017.10.09 at 17h 09m 03s.xml">
       <configuration name="GmailTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GmailTest - 2017.10.09 at 13h 32m 17s.xml">
+    <history-entry file="GmailTest - 2017.10.09 at 17h 09m 48s.xml">
       <configuration name="GmailTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GmailTest_gmailTest - 2017.10.09 at 12h 14m 36s.xml">
-      <configuration name="GmailTest.gmailTest" configurationId="TestNG" />
+    <history-entry file="GmailTest - 2017.10.09 at 17h 10m 49s.xml">
+      <configuration name="GmailTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GmailTest - 2017.10.09 at 17h 11m 41s.xml">
+      <configuration name="GmailTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -700,7 +694,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Big refactor" />
     <MESSAGE value="Fixed all bugs with using testNG data provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed all bugs with using testNG data provider" />
+    <MESSAGE value="Added CSV Parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CSV Parser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -709,38 +704,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ChromeDriverSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/cucumberTask/Steps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/cucumberTask/Hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="106" column="21" lean-forward="false" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/com/epam/dataProvider/sample.features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1009,53 +972,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/cucumberTask/Steps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="126" column="21" lean-forward="false" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/com/epam/dataProvider/users.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/com/epam/dataProvider/users.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/UserModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/DataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1067,34 +988,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/UserCredentionalXMLParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/XMLParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="114" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="114" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/cucumberTask/Steps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="132" column="21" lean-forward="false" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/com/epam/dataProvider/users.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.15/poi-3.15.jar!/org/apache/poi/ss/usermodel/Cell.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-313">
+          <caret line="66" column="13" lean-forward="true" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.15/poi-3.15.jar!/org/apache/poi/ss/usermodel/CellType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/DataProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/GmailTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/CSVParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="107" lean-forward="false" selection-start-line="14" selection-start-column="107" selection-end-line="14" selection-end-column="107" />
+          <caret line="14" column="107" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="107" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/dataProvider/GmailTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TempMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/XLSParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#319#351#0" expanded="true" />
           </folding>
         </state>
       </provider>

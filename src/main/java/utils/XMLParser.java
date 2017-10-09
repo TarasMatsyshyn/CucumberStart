@@ -9,7 +9,7 @@ import javax.xml.bind.Unmarshaller;
 import java.io.File;
 import java.util.List;
 
-public class UserCredentionalXMLParser {
+public class XMLParser {
     public List<UserModel> unMarshaling() throws JAXBException {
         JAXBContext jaxbContext = JAXBContext.newInstance(Users.class);
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
