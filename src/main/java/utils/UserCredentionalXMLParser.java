@@ -14,7 +14,7 @@ public class UserCredentionalXMLParser {
         JAXBContext jaxbContext = JAXBContext.newInstance(Users.class);
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
-        Users users = (Users) unmarshaller.unmarshal(new File("src/main/resources/users.xml"));
+        Users users = (Users) unmarshaller.unmarshal(new File("src/test/resources/com/epam/dataProvider/users.xml"));
         return users.getUserModels();
     }
 }

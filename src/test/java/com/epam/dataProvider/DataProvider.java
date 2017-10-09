@@ -3,12 +3,13 @@ package com.epam.dataProvider;
 import model.UserModel;
 import utils.UserCredentionalXMLParser;
 
+
 import java.util.List;
 
 public class DataProvider {
 
     @org.testng.annotations.DataProvider(parallel = true)
-    public Object [][] getData() throws Exception {
+    public static Object [][] getData() throws Exception {
         List<UserModel> users = userModels();
         Object [][] data = new Object[users.size()][2];
 
@@ -19,7 +20,7 @@ public class DataProvider {
         return data;
     }
 
-    private List<UserModel> userModels() throws Exception{
+    private static List<UserModel> userModels() throws Exception{
         UserCredentionalXMLParser xmlParser = new UserCredentionalXMLParser();
         return xmlParser.unMarshaling();
     }

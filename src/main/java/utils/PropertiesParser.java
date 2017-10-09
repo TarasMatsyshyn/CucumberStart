@@ -24,7 +24,7 @@ public class PropertiesParser {
         Properties instance = new Properties();
 
         try {
-            inputStream = new FileInputStream("src/main/resources/credentional.properties");
+            inputStream = new FileInputStream("src/main/resources/baseURL.properties");
             instance.load(inputStream);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
