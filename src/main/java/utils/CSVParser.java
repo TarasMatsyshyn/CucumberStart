@@ -10,7 +10,7 @@ import java.util.List;
 
 public class CSVParser {
 
-    public List<UserModel> getUsersFromCSV() throws IOException {
+    public static List<UserModel> getUsersFromCSV(String csvPath) throws IOException {
         List<UserModel> userModelList = new ArrayList<>();
         CSVReader reader = new CSVReader(new FileReader("src/test/resources/com/epam/dataProvider/users.csv"),',');
         String[] line = null;
@@ -22,4 +22,13 @@ public class CSVParser {
 
         return userModelList;
     }
+
+    public static void main(String[] args) throws IOException {
+        ArrayList <UserModel> list = (ArrayList) getUsersFromCSV("src/test/resources/com/epam/dataProvider/users.csv");
+        list.forEach(e->{
+            System.out.println(e.getLogin());
+            System.out.println(e.getPassword());
+        });
+    }
+
 }

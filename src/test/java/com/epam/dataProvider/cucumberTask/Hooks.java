@@ -5,7 +5,7 @@ import utils.ChromeDriverSingleton;
 
 public class Hooks {
     @After
-    public void closeDriver(){
+    public void closeDriver() {
         ChromeDriverSingleton.getDriver().close();
     }
 }

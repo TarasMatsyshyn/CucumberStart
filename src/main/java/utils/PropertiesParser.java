@@ -9,16 +9,16 @@ import java.util.Properties;
 
 public class PropertiesParser {
 
-    public UserModel getSomeUser(){
+    public UserModel getSomeUser() {
         Properties instance = getPropertyInstance();
-        return new UserModel(instance.getProperty("mail.login"),instance.getProperty("mail.password"));
+        return new UserModel(instance.getProperty("mail.login"), instance.getProperty("mail.password"));
     }
 
-    public String getBaseUrl(){
+    public String getBaseUrl() {
         return getPropertyInstance().getProperty("base.url");
     }
 
-    private Properties getPropertyInstance(){
+    private Properties getPropertyInstance() {
 
         FileInputStream inputStream;
         Properties instance = new Properties();
@@ -33,7 +33,6 @@ public class PropertiesParser {
         }
         return instance;
     }
-
 
 
 }

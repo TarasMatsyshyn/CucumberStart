@@ -24,7 +24,7 @@ public class GmailLoginPO {
 
     }
 
-    public void typeLogin(String email){
+    public void typeLogin(String email) {
         loginInput.sendKeys(email);
         loginButton.click();
     }

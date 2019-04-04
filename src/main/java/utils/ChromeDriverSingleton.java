@@ -10,26 +10,27 @@ public class ChromeDriverSingleton {
 
     private static ThreadLocal<WebDriver> webDriverThreadLocal = new ThreadLocal<>();
 
-    private ChromeDriverSingleton(){
+    private ChromeDriverSingleton() {
     }
 
-    public static ChromeDriver getDriver(){
-        if(webDriverThreadLocal.get()!= null){
-            return (ChromeDriver)webDriverThreadLocal.get();
+    public static ChromeDriver getDriver() {
+        if (webDriverThreadLocal.get() != null) {
+            return (ChromeDriver) webDriverThreadLocal.get();
         }
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-        WebDriver instance = new ChromeDriver(){
+        WebDriver instance = new ChromeDriver() {
             {
-                manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+                manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
             }
         };
         webDriverThreadLocal.set(instance);
-        return (ChromeDriver)webDriverThreadLocal.get();
+        return (ChromeDriver) webDriverThreadLocal.get();
     }
+
     public static void quit() {
         try {
             webDriverThreadLocal.get().quit();
-        }finally {
+        } finally {
 //            webDriverThreadLocal.remove();
         }
     }
