@@ -1,7 +1,7 @@
 package utils;
 
-import model.UserModel;
-import model.Users;
+import models.UserModel;
+import models.Users;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -10,11 +10,11 @@ import java.io.File;
 import java.util.List;
 
 public class XMLParser {
-    public List<UserModel> unMarshaling() throws JAXBException {
+    public List<UserModel> unMarshaling(String xmlFilePath) throws JAXBException {
         JAXBContext jaxbContext = JAXBContext.newInstance(Users.class);
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
-        Users users = (Users) unmarshaller.unmarshal(new File("src/test/resources/com/epam/dataProvider/users.xml"));
+        Users users = (Users) unmarshaller.unmarshal(new File(xmlFilePath));
         return users.getUserModels();
     }
 }

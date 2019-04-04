@@ -8,12 +8,14 @@ import utils.PropertiesParser;
 
 public class GmailTest {
 
+    private final String propertyPath = "src/main/resources/baseURL.properties";
+
     @Test(dataProviderClass = DataProvider.class, dataProvider = "getData")
     public void gmailTest(String email, String password) throws Exception {
 
         //Get start gmail page
         PropertiesParser propertiesParser = new PropertiesParser();
-        ChromeDriverSingleton.getDriver().get(propertiesParser.getBaseUrl());
+        ChromeDriverSingleton.getDriver().get(propertiesParser.getBaseUrl(propertyPath));
 
         //Log in
         GmailLoginPO login = new GmailLoginPO();

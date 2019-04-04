@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class ChromeDriverSingleton {
-    private static ChromeDriver driver = null;
 
     private static ThreadLocal<WebDriver> webDriverThreadLocal = new ThreadLocal<>();
 
@@ -28,11 +27,7 @@ public class ChromeDriverSingleton {
     }
 
     public static void quit() {
-        try {
-            webDriverThreadLocal.get().quit();
-        } finally {
-//            webDriverThreadLocal.remove();
-        }
+        webDriverThreadLocal.get().quit();
     }
 
 }

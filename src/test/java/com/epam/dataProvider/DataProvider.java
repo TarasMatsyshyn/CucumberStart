@@ -1,6 +1,6 @@
 package com.epam.dataProvider;
 
-import model.UserModel;
+import models.UserModel;
 import org.testng.ITestContext;
 import utils.CSVParser;
 import utils.XLSParser;
@@ -23,9 +23,9 @@ public class DataProvider {
         return data;
     }
 
-    private static List<UserModel> userModelsXML() throws Exception {
+    private static List<UserModel> userModelsXML(String xmlFilePath) throws Exception {
         XMLParser xmlParser = new XMLParser();
-        return xmlParser.unMarshaling();
+        return xmlParser.unMarshaling(xmlFilePath);
     }
 
     private static List<UserModel> userModelsCSV(String csvPath) throws IOException {
@@ -35,6 +35,6 @@ public class DataProvider {
 
     private static List<UserModel> userModelXLS(String xlsxPath) throws IOException {
         XLSParser xlsParser = new XLSParser();
-        return xlsParser.getUsersFromXLS();
+        return xlsParser.getUsersFromXLS(xlsxPath);
     }
 }

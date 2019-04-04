@@ -1,6 +1,6 @@
 package utils;
 
-import model.UserModel;
+import models.UserModel;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -16,9 +16,9 @@ import java.util.List;
 
 public class XLSParser {
     @SuppressWarnings("deprecation")
-    public List<UserModel> getUsersFromXLS() throws IOException {
+    public List<UserModel> getUsersFromXLS(String xlsFilePath) throws IOException {
         List<UserModel> userModels = new ArrayList<>();
-        FileInputStream excelFile = new FileInputStream(new File("src/test/resources/com/epam/dataProvider/users.xlsx"));
+        FileInputStream excelFile = new FileInputStream(new File(xlsFilePath));
         Workbook workbook = new XSSFWorkbook(excelFile);
         Sheet datatypeSheet = workbook.getSheetAt(0);
         Iterator<Row> iterator = datatypeSheet.iterator();
